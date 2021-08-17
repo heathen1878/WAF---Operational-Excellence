@@ -1,0 +1,3 @@
+# Kusto
+
+[Home](../readme.md)
