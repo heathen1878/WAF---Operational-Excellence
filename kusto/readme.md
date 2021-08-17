@@ -1,3 +1,3 @@
 # Kusto
 
-[Home](../readme.md)
+[Home](../README.md)
