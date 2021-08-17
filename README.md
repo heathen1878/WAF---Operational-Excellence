@@ -2,4 +2,4 @@
 
 Taken from the Well Architected Framework. 
 
-[Querying Logs](Kusto/readme.md)
+[Querying Logs](kusto/readme.md)
