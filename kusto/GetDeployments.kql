@@ -1,0 +1,25 @@
+AzureActivity 
+| search "deployment"
+| where TimeGenerated between (ago(7d) .. now() )
+| count 
+
+AzureActivity 
+| search "deployment"
+| where TimeGenerated between (ago(7d) .. now() ) and ActivityStatus == "Succeeded"
+| count 
+
+AzureActivity 
+| search "deployment"
+| where TimeGenerated between (ago(7d) .. now() ) and ActivityStatus == "Failed"
+| count 
+
+// Get the last 10 entries from the security events table over the last 7 days
+SecurityEvent
+| take 10 
+| where TimeGenerated between (ago(7d) .. now() )
+
+// Get entries which are over 
+SecurityEvent
+| where TimeGenerated between (ago(30d) .. now() )
+| where toint(Level) >= 10
+
